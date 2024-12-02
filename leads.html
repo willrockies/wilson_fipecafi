@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Leads</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Consulta de Leads</h1>
+
+    
+    <div class="mb-3">
+      <label for="nomeFiltro" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nomeFiltro" placeholder="Filtrar por nome">
+    </div>
+    <div class="mb-3">
+      <label for="emailFiltro" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="emailFiltro" placeholder="Filtrar por e-mail">
+    </div>
+    <div class="mb-3">
+      <label for="cursoFiltro" class="form-label">Curso de Interesse</label>
+      <select id="cursoFiltro" class="form-select">
+        <option value="">Selecione um curso</option>
+      </select>
+    </div>
+
+    <button id="buscarBtn" class="btn btn-primary">Buscar</button>
+
+    
+    <div class="mt-4">
+      <table class="table table-bordered" id="leadsTable">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Curso de Interesse</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+    <div id="turmaSection" class="mb-3" style="display: none;">
+      <label for="turmaSelect" class="form-label">Turma</label>
+      <select id="turmaSelect" class="form-select">
+        <option value="">Selecione uma turma</option>
+        
+      </select>
+    </div>
+    <button id="matricularBtn" class="btn btn-primary" style="display: none;">Matricular</button>
+    
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/Leads.js"></script>
+</body>
+</html>
