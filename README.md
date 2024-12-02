@@ -6,3 +6,6 @@ vê capturar.JPG
 
 !alt text capturar.JPG  
 <img src="Capturar.JPG">
+
+
+por favor rodar a API no backend para funcionamento da pagina 
